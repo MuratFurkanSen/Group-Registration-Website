@@ -1,0 +1,26 @@
+.team-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.team-table td, .team-table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.team-table th {
+    background-color: #f2f2f2;
+}
+
+.remove-btn {
+    color: red;
+    cursor: pointer;
+}
+.empty-slot{
+    color: #ccc;
+}
+.filled-slot{
+    color: #000;
+}

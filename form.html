@@ -2,9 +2,71 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Form</title>
+    <link rel="stylesheet" href="form.css">
 </head>
 <body>
+
+<h1>Create Your Team</h1>
+
+<!-- First Input: Topic Selection -->
+<label for="topic">Choose a topic:</label>
+<input list="topics" id="topic" name="topic" placeholder="Enter topic">
+<datalist id="topics"></datalist>
+<br><br>
+
+<!-- Second Input: Date Selection -->
+<label for="date">Choose a Date:</label>
+<input list="dates" id="date" name="date" placeholder="Enter a date">
+<datalist id="dates"></datalist>
+<br><br>
+
+<!-- Third Input: Team Creation -->
+<label for="team-member">Enter your name to join the team:</label>
+<input list="names" id="team-member" name="team-member" placeholder="Enter name">
+<datalist id="names"></datalist>
+<button onclick="addMember()">Add to Team</button>
+<h3>Team:</h3>
+<table class="team-table">
+    <thead>
+    <tr>
+        <th>Member</th>
+        <th>Member Name</th>
+        <th>Action</th>
+    </tr>
+    </thead>
+    <tbody id="team-table-body">
+    <tr>
+        <td>1</td>
+        <td class="empty-slot">Empty</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td class="empty-slot">Empty</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td class="empty-slot">Empty</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td class="empty-slot">Empty</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td class="empty-slot">Empty</td>
+        <td></td>
+    </tr>
+    </tbody>
+</table>
+<button onclick="saveTeam()">Save Team</button>
+
+<script src="form.js"></script>
 
 </body>
 </html>
