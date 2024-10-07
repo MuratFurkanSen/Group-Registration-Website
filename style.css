@@ -8,52 +8,85 @@
 
 .banner {
   width: 100%;
-  height: 100vh;
+  height: 70vh;
   background-color: white;
   background-size: cover;
   background-position: center;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
 }
 
 .header {
-  position: absolute;
   width: 100%;
-  top: 0%;
   color: #333333;
   background-color: #f8f8ff;
-  padding: 40px 20px;
-  box-shadow: 0 4px 9px #98fb98;
-  margin: auto;
+  padding: 10px 20px;
+  box-shadow: 0 0 10px rgba(0, 255, 0, 0.7), 0 0 20px rgba(0, 255, 0, 0.5);
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .header h1 {
-  font-size: 60px;
-  margin: auto;
+  font-size: 40px;
+  margin: 0;
+  padding-left: 200px;
+  padding-right: 20px;
+  flex: 1;
   text-align: left;
 }
 
+.content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .infobox {
-  position: absolute;
   width: 80%;
-  top: 60%;
-  transform: translateY(-50%);
   text-align: center;
   color: #333333;
   padding: 40px 20px;
-  box-shadow: 0 4px 9px rgba(0, 0, 0, 0.1);
-  margin: auto;
+  background-color: #ffffff;
+  margin: 20px auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-.infobox p {
+.infobox h1 {
   margin: 20px auto;
-  font-weight: 100;
-  line-height: 25px;
+  font-weight: 600;
+  font-size: 2em;
+  color: #1a1a1a;
 }
+
+.steps {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.step1,
+.step2,
+.step3 {
+  width: 30%;
+  text-align: center;
+  color: #333333;
+  padding: 20px;
+  margin-top: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.step1 h2,
+.step2 h2,
+.step3 h2 {
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
 button {
   width: 200px;
   padding: 15px 0;
@@ -70,6 +103,7 @@ button {
   overflow: hidden;
   z-index: 1;
 }
+
 span {
   background: #9966cc;
   height: 100%;
@@ -81,6 +115,19 @@ span {
   z-index: -1;
   transition: 0.5s;
 }
+
 button:hover span {
   width: 100%;
+}
+
+.header-image {
+  width: 100px;
+  height: 100px;
+  margin-right: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.image-container img:last-child {
+  margin-right: 300;
 }
