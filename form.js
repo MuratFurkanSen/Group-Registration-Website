@@ -1,3 +1,4 @@
+const fs = require("fs")
 // Load JSON data from file (simulated as a constant here)
 const data = {
     "topics": ["Technology", "Science", "Art", "Business"],
@@ -120,6 +121,7 @@ function saveTeam() {
     // Create Team
     let team = { topic: topic, date: date, members: members };
     data.teams.push(team);
+
 
 
 }
